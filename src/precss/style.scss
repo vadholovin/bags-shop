@@ -1,0 +1,29 @@
+//
+// Main SCSS file
+//
+
+// load config
+@import 'variables/variables';
+
+// load mixins
+@import 'mixins_general';
+
+// load base
+@import 'typography';
+
+// load modules
+@import 'smart-grid';
+
+.wrapper {
+  @include wrapper();
+}
+
+// load structure
+@import 'sections/hero';
+@import 'sections/benefits';
+@import 'sections/bags';
+@import 'sections/conditions';
+@import 'sections/bestseller';
+@import 'sections/reviews';
+@import 'sections/footer';
+@import 'sections/socials';
