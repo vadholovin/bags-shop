@@ -2,14 +2,9 @@
 // Main SCSS file
 //
 
-// load config
-@import 'variables/variables';
-
-// load mixins
-@import 'mixins_general';
-
 // load base
 @import 'typography';
+@import 'base';
 
 // load modules
 @import 'smart-grid';
@@ -19,6 +14,7 @@
 }
 
 // load structure
+@import 'sections/contacts';
 @import 'sections/hero';
 @import 'sections/benefits';
 @import 'sections/bags';

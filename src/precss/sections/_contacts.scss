@@ -1,0 +1,30 @@
+// ========================================
+// CONTACTS
+// ========================================
+
+.contacts {
+  background-color: #fff;
+
+  .wrapper {
+    padding-top: 10px;
+    font-size: 0;
+    text-align: center;
+  }
+}
+
+.contacts a{
+  display: inline-block;
+  font-size: 22px;
+  color: #151515;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fb3840;
+  }
+}
+
+.contacts a:not(:last-child) {
+  margin-right: 80px;
+}

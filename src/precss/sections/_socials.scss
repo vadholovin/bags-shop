@@ -1,0 +1,52 @@
+// ========================================
+// SOCIALS
+// ========================================
+
+.socials {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+  font-size: 0;
+  text-align: center;
+}
+
+.socials-link {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+.ic-fbook {
+  background-image: url(../images/social-facebook.svg);
+
+}
+
+.ic-instagram {
+  background-image: url(../images/social-instagram.svg);
+}
+
+.ic-vk {
+  background-image: url(../images/social-vk.svg);
+}
+
+.ic-twitter {
+  background-image: url(../images/social-twitter.svg);
+}
+
+.ic-gplus {
+  background-image: url(../images/social-googleplus.svg);
+}

@@ -11,10 +11,6 @@ const settings = {
   },
   oldSizeStyle: false,
   breakPoints: {
-    xlg: {
-      'width': '1600px',
-      'fields': '20px'
-    },
     lg: {
       'width': '1200px',
       'fields': '20px'

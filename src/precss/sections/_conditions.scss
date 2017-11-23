@@ -1,0 +1,77 @@
+// ========================================
+// CONDITIONS
+// ========================================
+
+.conditions {
+  min-height: 635px;
+  padding-top: 85px;
+  padding-bottom: 80px;
+  background: #2d2741 url(../images/bkg-02.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.conditions-container {
+  width: 630px;
+  margin-left: 90px;
+}
+
+.conditions .section-title {
+  color: #fff;
+  margin-bottom: 65px;
+}
+
+.conditions-form {
+  width: 630px;
+  padding: 30px 40px;
+  border: 2px solid #fff;
+  font-size: 0;
+  text-align: center;
+}
+
+.form-title{
+  margin-bottom: 32px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.form-field__container {
+  margin-bottom: 7px;
+  border: 1.5px solid rgba(255, 255, 255, 0.87);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 12px 28px;
+    border: 0;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    background-color: transparent;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #fff;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #fff;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #fff;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #fff;
+    }
+  }
+}
+
+.conditions-form .btn {
+  margin-top: 20px;
+  width: 270px;
+  border: 0;
+}

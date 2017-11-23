@@ -7,29 +7,34 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <div class="page">
-      <section class="hero">
+      <section class="contacts">
         <div class="wrapper">
-          <div class="hero-contacts">
             <a href="tel:8343-383-34-05">8(343)383-34-05</a>
             <a href="tel:+79068099944">+7-906-809-99-44</a>
-          </div><!-- .hero-contacts end -->
-
+        </div><!-- .wrapper end -->
+      </section><!-- .contacts end -->
+      
+      <section class="hero">
+        <div class="wrapper">
           <div class="hero-content">
             <div class="hero-logo">
-              <img src="images/logo-tosoco.png" alt="" class="logo-tosoco">
-              <img src="images/logo-jones01.png" alt="" class="logo-jones">
+              <img src="images/logo-tosoco.png" alt="" class="hero-logo--1">
+              <img src="images/logo-jones01.png" alt="" class="hero-logo--2">
               <p>Оптовая продажа фабричных сумок по РФ</p>
             </div>
 
             <div class="hero-heading">
-              <h1 class="hero-heading__title">Зарабатывайте от 200 % на фабричных сумках уже через 3 дня</h1>
+              <h1 class="hero-heading__title">Зарабатывайте от 200 % на<br>
+              фабричных сумках уже через 3 дня</h1>
               <p class="hero-heading__desc">Цены на сумки от 600-1700 рублей</p>
             </div><!-- .hero-heading end -->
 
@@ -39,8 +44,8 @@
                 в подарок - пошаговую систему «Увеличение прибыли магазина сумок в 2 раза»
               </p>
 
-              <a href="#" class="btn">Скачать прайс</a>
-              <a href="#" class="btn">Заказать звонок</a>
+              <a href="#" class="btn btn-danger">Скачать прайс</a>
+              <a href="#" class="btn btn-danger">Заказать звонок</a>
             </div><!-- .hero-price end -->
           </div><!-- .hero-content end -->
         </div><!-- .wrapper end -->
@@ -84,23 +89,31 @@
       <!-- start .conditions -->
       <section class="conditions">
         <div class="wrapper">
-          <h2 class="section-title">
-            Условия минимальных цен
-          </h2>
+          <div class="conditions-container">>
+            <h2 class="section-title">
+              Условия минимальных цен
+            </h2>
 
-          <form class="conditions-form" action="#" method="post">
-            <fieldset>
-              <legend class="form-title">
-                Узнайте свою минимальную цену
-              </legend>
+            <form class="conditions-form" action="#" method="post">
+                <div class="form-title">
+                  Узнайте свою минимальную цену
+                </div>
+                
+                <div class="form-field__container">
+                  <input type="text" name="name" placeholder="Ваше имя">
+                </div>
 
-              <input type="text" name="name" placeholder="Ваше имя">
-              <input type="text" name="phone" placeholder="Ваш телефон">
-              <input type="text" name="email" placeholder="Ваш e-mail">
+                <div class="form-field__container">
+                  <input type="text" name="phone" placeholder="Ваш телефон">
+                </div>
 
-              <button type="submit" class="btn">Узнать об условиях</button>
-            </fieldset>
-          </form>
+                <div class="form-field__container">
+                  <input type="text" name="email" placeholder="Ваш e-mail">
+                </div>
+
+                <button type="submit" class="btn btn-light">Узнать об условиях</button>
+            </form>
+          </div>
         </div><!-- .wrapper end -->
       </section><!-- .conditions end -->
 
@@ -116,29 +129,112 @@
       <section class="reviews">
         <div class="wrapper">
           <h2 class="section-title">Отзывы клиентов</h2>
+          
+          <div class="reviews-items owl-carousel">
+            <div class="reviews-item">
+              <div class="reviews-item__img">
+                <img src="images/review-1.jpg" alt="">
+              </div>
 
+              <div class="reviews-item__content">
+                <div class="reviews-item__name">
+                  Надежда Петрова
+                </div>
+                <div class="reviews-item__shop">
+                  Сеть торговых островов с сумками
+                </div>
+
+                <div class="reviews-item__review">
+                  Как же мне нравится работать с Вами! Все быстро, четко, слажено. Большой ассортимент сумок, рюкзаков, клатчей. Главное - низкая ценовая политика. Спасибо Вам!
+                </div>
+              </div>
+            </div><!-- .reviews-item end -->
+
+            <div class="reviews-item">
+              <div class="reviews-item__img">
+                <img src="images/review-2.jpg" alt="">
+              </div>
+
+              <div class="reviews-item__content">
+                <div class="reviews-item__name">
+                  Сергей Станилевич
+                </div>
+                <div class="reviews-item__shop">
+                  Сеть магазинов кожгалантереи
+                </div>
+
+                <div class="reviews-item__review">
+                  Анализируя продажи, могу с уверенностью сказать, что ваши сумки лучшие, хотя мне сложно угодить! Мой ассортимент на 80% - Ваш. После работы с "LEODORO" продажи возросли в 1-3 раза. Спасибо!
+                </div>
+              </div>
+            </div><!-- .reviews-item end -->
+
+            <div class="reviews-item">
+              <div class="reviews-item__img">
+                <img src="images/review-3.jpg" alt="">
+              </div>
+
+              <div class="reviews-item__content">
+                <div class="reviews-item__name">
+                  Ольга Рожина
+                </div>
+                <div class="reviews-item__shop">
+                  Магазин сумок "Ремешок"
+                </div>
+
+                <div class="reviews-item__review">
+                  Товар вашего магазина всегда приятно получать. Это и аккуратная упаковка, и ответственная служба доставки по Екатеринбургу. Я с удовольствием предлагаю своим клиентам сумочки от LEODORO. Мне приятно людям продавать ваш товар!
+                </div>
+              </div>
+            </div><!-- .reviews-item end -->
+
+            <div class="reviews-item">
+              <div class="reviews-item__img">
+                <img src="images/review-4.jpg" alt="">
+              </div>
+
+              <div class="reviews-item__content">
+                <div class="reviews-item__name">
+                  Варвара Изычева
+                </div>
+                <div class="reviews-item__shop">
+                  Интернет-магазин сумок "BARBARA"
+                </div>
+
+                <div class="reviews-item__review">
+                  Я правда влюбилась в Ваши сумки. Огромный ассортимент, интересный дизайн, отличное качество продукции. У меня и моих клиентов только положительные эмоции!
+                </div>
+              </div>
+            </div><!-- .reviews-item end -->
+          </div><!-- .reviews-items end -->
         </div><!-- .wrapper end -->
       </section><!-- .reviews end -->
 
       <footer class="page-footer">
         <div class="wrapper">
           <div class="footer-logo">
-            <img src="images/logo-jones02.png" alt="">
+            <div class="footer-logo__container">
+              <img src="images/logo-jones02.png" alt="">
+            </div>
+
+            <div class="footer-logo__container">
+              <img src="images/logo-tosoco-dark.png" alt="">
+            </div>
           </div>
 
           <div class="footer-contacts">
-            <div class="contacts-phone">
+            <div class="footer-contact contacts-phone">
               8(343)383-34-05<br>
               +79068099944
             </div>
 
-            <div class="contacts-email">
+            <div class="footer-contact contacts-email">
               <a href="mailto:Leodoro-opt@yandex.ru">
                 Leodoro-opt@yandex.ru
               </a>
             </div>
 
-            <div class="contacts-address">
+            <div class="footer-contact contacts-address">
               Калининград, ул. Горького, 168, оф 3, 236001<br>
               Санкт-Петербург, ул. Комсомола 41, 195009
             </div>
@@ -147,20 +243,19 @@
       </footer>
       
       <div class="socials">
-        <ul class="socials-list">
-          <li>
+        <div class="socials-list">
             <a href="#" class="socials-link ic-fbook"></a>
             <a href="#" class="socials-link ic-instagram"></a>
             <a href="#" class="socials-link ic-vk"></a>
             <a href="#" class="socials-link ic-twitter"></a>
             <a href="#" class="socials-link ic-gplus"></a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div><!-- .page end -->
 
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

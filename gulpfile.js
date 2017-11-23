@@ -10,7 +10,7 @@ const config = {
     src: './src',
     css: {
         watch: '/precss/**/*.scss',
-        src: '/precss/styles.scss',
+        src: '/precss/style.scss',
         dest: '/css'
     },
     html: {

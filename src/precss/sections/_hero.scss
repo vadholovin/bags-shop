@@ -1,0 +1,103 @@
+// ========================================
+// HERO
+// ========================================
+
+.hero {
+  background: url(../images/bkg-01.jpg) no-repeat center center;
+  background-size: cover;
+  height: 1130px;
+
+  .wrapper {
+    height: 1130px;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  
+  width: 694px;
+  height: 100%;
+  margin-left: 42.5%;
+  padding-right: 45px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+.hero-logo {
+  width: 417px;
+  margin-top: 30px;
+  margin-bottom: 112px;
+  margin-right: 45px;
+}
+
+.hero-logo--1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.hero-logo--2 {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hero-logo p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #231f20;
+}
+
+.hero-heading {
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+.hero-heading__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.hero-heading__desc {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.hero-price {
+  width: 530px;
+  padding: 40px 28px 30px 28px;
+  border: 1.5px solid #242021;
+  font-size: 0;
+  text-align: center;
+}
+
+.price-title {
+  margin-bottom: 16px;
+  font-size: 23px;
+  text-align: right;
+}
+
+.price-desc {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  font-size: 20px;
+  text-align: right;
+}
+
+.hero-price .btn {
+  width: 200px;
+}
+
+.hero-price .btn:not(:last-child) {
+  margin-right: 20px;
+}

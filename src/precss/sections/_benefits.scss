@@ -1,0 +1,72 @@
+// ========================================
+// BENEFITS
+// ========================================
+
+.benefits {
+  min-height: 500px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f6f6f6;
+}
+
+.benefits .section-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.benefits-list {
+  @include row-flex();
+  justify-content: center;
+}
+
+.benefits-item {
+  @include col();
+  @include size(4);
+  @include size-md(8);
+  @include size-sm(10);
+  
+  @include md-block(){
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  position: relative;
+  padding-top: 100px;
+  font-size: 18px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+  }
+
+  &--cost::before {
+    background: url(../images/ic-cost.svg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &--discount::before {
+    background: url(../images/ic-discount.svg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &--time::before {
+    background: url(../images/ic-time.svg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &--delivery::before {
+    background: url(../images/ic-delivery.svg) no-repeat center center;
+    background-size: cover;
+  }
+}
+

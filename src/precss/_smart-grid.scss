@@ -3,7 +3,6 @@ $offset: 20px;
 $offset_one_side: ($offset / 2);
 $atom: (100% / $columns);
 
-$break_xlg: 1600px;
 $break_lg: 1200px;
 $break_md: 992px;
 $break_sm: 768px;
@@ -64,11 +63,6 @@ $break_xxs: 420px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
-
-    @media screen and (max-width: $break_xlg){
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
     @media screen and (max-width: $break_lg){
         padding-left: 20px;
@@ -188,125 +182,6 @@ $break_xxs: 420px;
 }
 @mixin float($value){
     float: $value;
-}
-@mixin size-xlg($n){
-    @media screen and (max-width: $break_xlg){
-        $value: $atom * $n;
-        width: #{calc(#{$value} - #{$offset})};
-    }
-}
-@mixin offset-xlg($n){
-    @media screen and (max-width: $break_xlg){
-        $value: $atom * $n;
-        margin-left: #{calc(#{$value} + #{$offset_one_side})};
-        margin-right: #{calc(#{$value} + #{$offset_one_side})};
-    }
-}
-@mixin offset-left-xlg($n){
-    @media screen and (max-width: $break_xlg){
-        $value: $atom * $n;
-        margin-left: #{calc(#{$value} + #{$offset_one_side})};
-    }
-}
-@mixin offset-right-xlg($n){
-    @media screen and (max-width: $break_xlg){
-        $value: $atom * $n;
-        margin-right: #{calc(#{$value} + #{$offset_one_side})};
-    }
-}
-@mixin offset-padding-xlg($n){
-    @media screen and (max-width: $break_xlg){
-        $value: $atom * $n;
-        padding-left: #{calc(#{$value} + #{$offset_one_side})};
-        padding-right: #{calc(#{$value} + #{$offset_one_side})};
-    }
-}
-@mixin offset-left-padding-xlg($n){
-    @media screen and (max-width: $break_xlg){
-        $value: $atom * $n;
-        padding-left: #{calc(#{$value} + #{$offset_one_side})};
-    }
-}
-@mixin offset-right-padding-xlg($n){
-    @media screen and (max-width: $break_xlg){
-        $value: $atom * $n;
-        padding-right: #{calc(#{$value} + #{$offset_one_side})};
-    }
-}
-@mixin justify-content-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        justify-content: $value;
-    }
-}
-@mixin align-items-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        align-items: $value;
-    }
-}
-@mixin align-content-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        align-content: $value;
-    }
-}
-@mixin align-self-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        align-self: $value;
-    }
-}
-@mixin order-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        order: $value;
-    }
-}
-@mixin flex-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        flex: $value;
-    }
-}
-@mixin flex-grow-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        flex-grow: $value;
-    }
-}
-@mixin flex-shrink-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        flex-shrink: $value;
-    }
-}
-@mixin flex-basis-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        flex-basis: $value;
-    }
-}
-@mixin flex-direction-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        flex-direction: $value;
-    }
-}
-@mixin flex-wrap-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        flex-wrap: $value;
-    }
-}
-@mixin flex-flow-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        flex-flow: $value;
-    }
-}
-@mixin float-xlg($value){
-    @media screen and (max-width: $break_xlg){
-        float: $value;
-    }
-}
-@mixin xlg($name, $value){
-    @media screen and (max-width: $break_xlg){
-        #{$name}: $value;
-    }
-}
-@mixin xlg-block(){
-    @media screen and (max-width: $break_xlg){
-        @content;
-    }
 }
 @mixin size-lg($n){
     @media screen and (max-width: $break_lg){
