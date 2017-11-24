@@ -2,3 +2,72 @@
 // BESTSELLER
 // ========================================
 
+.bestseller{
+  
+  .wrapper {
+    position: relative;
+    padding-top: 50px;
+    padding-left: 74px;
+  }
+
+  .section-title {
+    margin-bottom: 120px;
+  }
+
+  .btn {
+    margin-top: 100px;
+    width: 190px;
+    border: 2.5px solid #141212;
+  }
+}
+
+.bestseller-content {
+  position: absolute;
+  width: 280px;
+  margin-top: 110px;
+  z-index: 2;
+}
+
+.bestseller-content p {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 20px;
+}
+
+.bestseller-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.bestseller-slider {
+  max-width: 754px;
+  margin-left: 33.203125%;
+
+  // @include 
+}
+
+.bestseller-bag {
+  max-width: 754px;
+}
+
+.bestseller .owl-theme .owl-nav {
+  position: absolute;
+  left: -400px;
+  bottom: 180px;
+}
+
+.bestseller .owl-theme .owl-prev,
+.bestseller .owl-theme .owl-next {
+  font-size: 15px;
+  color: #000;
+  text-decoration: underline;
+  background: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #000;
+    text-decoration: underline;
+    background: none;
+  }
+}

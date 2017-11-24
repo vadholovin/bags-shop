@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -17,6 +21,10 @@ img {
   font-size: 40px;
   font-weight: normal;
   text-transform: uppercase;
+
+  @include sm-block(){
+    font-size: 30px;
+  }
 }
 
 .btn {
@@ -26,6 +34,7 @@ img {
   font-size: 20px;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn-danger {
@@ -43,7 +52,9 @@ img {
   background-color: #fff;
   color: #000;
 
-  &:hover {
-    opacity: 0.8;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fb3840;
   }
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
+  $(".reviews-items").owlCarousel({
     margin: 10,
     dots: true,
     responsiveClass:true,
@@ -12,4 +12,21 @@ $(document).ready(function(){
       }
     }
   });
+
+  $(".bestseller-slider").owlCarousel({
+    margin: 1,
+    items: 1,
+    dots: false,
+    nav: true,
+    navText: ["&#60; Предыдущая сумка", "Следующая сумка &#62;"],
+  });
+
+  $(".bags-slider").owlCarousel({
+    margin: 1,
+    items: 1,
+    dots: false,
+    nav: true,
+    navText: ["&#60; Предыдущая сумка", "Следующая сумка &#62;"],
+  });
 });
+

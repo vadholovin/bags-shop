@@ -2,9 +2,7 @@
 // Main SCSS file
 //
 
-// load base
-@import 'typography';
-@import 'base';
+
 
 // load modules
 @import 'smart-grid';
@@ -12,6 +10,10 @@
 .wrapper {
   @include wrapper();
 }
+
+// load base
+@import 'typography';
+@import 'base';
 
 // load structure
 @import 'sections/contacts';
