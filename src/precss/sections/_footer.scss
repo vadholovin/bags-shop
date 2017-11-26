@@ -12,6 +12,21 @@
     padding-bottom: 50px;
   }
 
+  .wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    @include md-block(){
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    @include sm-block(){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
   .flex-container {
     display: flex;
     justify-content: space-between;
@@ -37,6 +52,10 @@
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo__container--small {
+  width: 110px;
 }
 
 .footer-contacts {

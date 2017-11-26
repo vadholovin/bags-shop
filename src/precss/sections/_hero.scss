@@ -41,11 +41,7 @@
     @media (max-width: 1366px){
       height: 700px;
     }
-
-    @include md-block(){
-      // height: 500px;
-    }
-
+    
     @include xs-block(){
       height: 750px;
     }
@@ -62,7 +58,7 @@
   display: flex;
   flex-flow: column wrap;
   align-items: flex-end;
-  
+
   max-width: 694px;
   height: 100%;
   margin-right: 48px;
@@ -155,7 +151,8 @@
   display: block;
   margin-right: 40px;
   max-width: 200px;
-  flex-basis: 100px;
+  // flex-basis: 100px;
+  min-width: 100px;
 
   @include sm-block(){
     margin-right: 20px;
@@ -168,7 +165,8 @@
 }
 
 .hero-logo--2 {
-  flex-basis: 100px;
+  // flex-basis: 100px;
+  min-width: 100px;
   max-width: 200px;
   display: block;
 }
@@ -193,6 +191,7 @@
 .hero-heading {
   text-align: right;
   margin-bottom: 100px;
+  max-width: 100%;
 
   @media (max-width: 1600px){
     margin-bottom: 60px;
@@ -215,6 +214,7 @@
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
+  max-width: 100%;
   font-size: 32px;
   font-weight: normal;
   text-transform: uppercase;
@@ -307,3 +307,39 @@
     margin-bottom: 16px;
   }
 }
+
+#small-modal { 
+
+  padding: 2em;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  
+  
+  input { 
+    margin: .8em auto;
+    border: 1px solid #aaa;
+    font-family: inherit; 
+    text-transform: inherit; 
+    font-size: inherit;
+    
+    display: block; 
+    width: 280px; 
+    padding: .4em;
+  }
+
+  .formBtn { 
+    width: 250px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+  }
+}
+
+.callForm-title {
+  font-size: 20px;
+}
+

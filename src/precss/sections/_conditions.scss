@@ -45,6 +45,10 @@
   border: 2px solid #fff;
   font-size: 0;
   text-align: center;
+
+  @include xs-block(){
+    padding: 20px 16px;
+  }
 }
 
 .form-title{
@@ -97,4 +101,8 @@
   margin-top: 20px;
   width: 270px;
   border: 0;
+
+  @include xxs-block(){
+    width: 250px;
+  }
 }

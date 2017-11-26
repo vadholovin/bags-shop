@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" href="feedback/css/jquery.arcticmodal.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
   </head>
   <body>
 
@@ -19,30 +24,30 @@
       <section class="hero">
         <div class="wrapper">
           <div class="hero-content">
-            <div class="contacts">
-              <a href="tel:8343-383-34-05">8(343)383-34-05</a>
-              <a href="tel:+79068099944">+7-906-809-99-44</a>
-            </div><!-- .contacts end -->
-            
-            <div class="hero-logos">
-              <div class="hero-logo">
-                <img src="images/logo-jones-1.png" alt="" class="hero-logo--1">
-                <img src="images/logo-tosoco.png" alt="" class="hero-logo--2">
-              </div>
-              <p>Оптовая продажа фабричных сумок по РФ</p>
-            </div>
-
-            <div class="hero-heading">
-              <h1 class="hero-heading__title">Зарабатывайте от 200% благодаря нашим низким ценам и отсрочке платежа до 15 дней</h1>
-              <p class="hero-heading__desc">Цены на сумки от 600-1700 рублей</p>
-            </div><!-- .hero-heading end -->
-
-            <div class="hero-price">
-              <div class="price-title">Получите оптовый прайс прямо СЕЙЧАС</div>
+              <div class="contacts">
+                <a href="tel:8343-383-34-05">8(343)383-34-05</a>
+                <a href="tel:+79068099944">+7-906-809-99-44</a>
+              </div><!-- .contacts end -->
               
-              <a href="#" class="btn btn-danger">Скачать прайс</a>
-              <a href="#" class="btn btn-danger">Заказать звонок</a>
-            </div><!-- .hero-price end -->
+              <div class="hero-logos">
+                <div class="hero-logo">
+                  <img src="images/logo-jones-1.png" alt="" class="hero-logo--1">
+                  <img src="images/logo-tosoco.png" alt="" class="hero-logo--2">
+                </div>
+                <p>Оптовая продажа фабричных сумок по РФ</p>
+              </div>
+
+              <div class="hero-heading">
+                <h1 class="hero-heading__title">Зарабатывайте от 200% благодаря нашим низким ценам и отсрочке платежа до 15 дней</h1>
+                <p class="hero-heading__desc">Цены на сумки от 600-1700 рублей</p>
+              </div><!-- .hero-heading end -->
+
+              <div class="hero-price">
+                <div class="price-title">Получите оптовый прайс прямо СЕЙЧАС</div>
+                
+                <a href="#conditions" class="btn btn-danger to-form">Скачать прайс</a>
+                <a class="btn btn-danger modal_btn" id="call">Заказать звонок</a>
+              </div><!-- .hero-price end -->
           </div><!-- .hero-content end -->
         </div><!-- .wrapper end -->
       </section><!-- .hero end -->
@@ -93,18 +98,21 @@
               <li class="ic-feather"> легкий вес сумок, в среднем 700 гр.</li>
             </ul><!-- .bags-features end -->
 
-            <button class="btn btn-light" type="button">Заказать</button>
+            <a href="#conditions" class="btn btn-light btn-hide to-form">Заказать</a>
           </div><!-- .bags-content end -->
 
           <div class="bags-slider owl-carousel owl-theme">
             <div class="bags-slide">
-              <img src="images/bag-red-slide-2.jpg" alt="">
+              <a href="#conditions" class="btn btn-light btn-over to-form">Заказать</a>
+              <img src="images/bag-red-slide-1.jpg" alt="">
             </div>
             <div class="bags-slide">
-              <img src="images/bag-red-slide-2.jpg" alt="">
+              <a href="#conditions" class="btn btn-light btn-over to-form">Заказать</a>
+              <img src="images/bag-slide-5.jpg" alt="">
             </div>
             <div class="bags-slide">
-              <img src="images/bag-red-slide-2.jpg" alt="">
+              <a href="#conditions" class="btn btn-light btn-over to-form">Заказать</a>
+              <img src="images/bag-slide-6.jpg" alt="">
             </div>
           </div><!-- .bags-slider end -->
 
@@ -161,16 +169,16 @@
       </section><!-- .bags end -->
 
       <!-- start .conditions -->
-      <section class="conditions">
+      <section class="conditions" id="conditions">
         <div class="wrapper">
           <div class="conditions-container">>
             <h2 class="section-title">
-              Условия минимальных цен
+              Перейти в оптовый каталог
             </h2>
 
-            <form class="conditions-form" action="#" method="post">
+            <form class="conditions-form" action="" name="form-2">
                 <div class="form-title">
-                  Узнайте свою минимальную цену
+                  Более 100 моделей от 600 р.
                 </div>
                 
                 <div class="form-field__container">
@@ -185,7 +193,7 @@
                   <input type="text" name="email" placeholder="Ваш e-mail">
                 </div>
 
-                <button type="submit" class="btn btn-light">Узнать об условиях</button>
+                <button type="submit" name="send" class="btn btn-light feedback">Перейти в каталог</button>
             </form>
           </div>
         </div><!-- .wrapper end -->
@@ -210,21 +218,24 @@
               в среднем = 700 гр.
             </p>
 
-            <button class="btn btn-light" type="button">Заказать</button>
+            <a href="#conditions" class="btn btn-light btn-hide to-form">Заказать</a>
           </div><!-- .bestseller-content end -->
 
           <div class="prop-container">
             <div class="bestseller-slider owl-carousel owl-theme">
               <div class="bestseller-bag">
-                <img src="images/bag-black-slide-2.jpg" alt="">
+                <a href="#conditions" class="btn btn-light btn-over to-form">Заказать</a>
+                <img src="images/bag-black-slide-1.jpg" alt="">
               </div>
 
               <div class="bestseller-bag">
-                <img src="images/bag-black-slide-2.jpg" alt="">
+                <a href="#conditions" class="btn btn-light btn-over to-form">Заказать</a>
+                <img src="images/bag-slide-3.jpg" alt="">
               </div>
 
               <div class="bestseller-bag">
-                <img src="images/bag-black-slide-2.jpg" alt="">
+                <a href="#conditions" class="btn btn-light btn-over to-form">Заказать</a>
+                <img src="images/bag-slide-4.jpg" alt="">
               </div>
             </div><!-- .bestseller-slider end -->
           </div>
@@ -339,7 +350,7 @@
             </div><!-- .footer-contacts end -->
 
             <div class="footer-logo">
-              <div class="footer-logo__container">
+              <div class="footer-logo__container logo__container--small">
                 <img src="images/logo-tosoco-dark.png" alt="">
               </div>
             </div>
@@ -356,11 +367,35 @@
             <a href="#" class="socials-link ic-gplus"></a>
         </div>
       </div>
+      
+      <div style="display: none;">
+        <div class="box-modal" id="small-modal">
+          <div class="modal-close arcticmodal-close">x</div>
+          <div class="modal-content-box">
+
+            <h2 class="callForm-title">
+              Заполните форму и мы вам<br>
+              обязательно перезвоним
+            </h2>
+            
+            <form action="" name="form-1" method="get">
+              <input name="name" placeholder="Имя: *" type="text">
+              <input name="phone" placeholder="Телефон: *" type="text">
+              <button class="btn btn-danger formBtn feedback" name="send" type="submit">Заказать звонок</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
     </div><!-- .page end -->
 
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/PageScroll2id.min.js"></script>
+    <script src="feedback/js/jquery.jgrowl.js"></script>
+    <script src="feedback/js/jquery.arcticmodal.js"></script>
+    <script src="feedback/js/feedback.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

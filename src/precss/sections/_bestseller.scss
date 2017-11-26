@@ -7,25 +7,73 @@
   .wrapper {
     position: relative;
     padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 74px;
+
+    @media (max-width: 1100px){
+      padding-left: 40px;
+      padding-top: 150px;
+    }
   }
 
   .section-title {
     margin-bottom: 120px;
+
+    @media (max-width: 1100px){
+      margin-bottom: 70px;
+    }
+
+    @include md-block(){
+      text-align: center;
+    }
   }
 
   .btn {
     margin-top: 100px;
     width: 190px;
     border: 2.5px solid #141212;
+
+    @media (max-width: 1100px){
+      margin-top: 60px;
+    }
+  }
+
+  .btn-over {
+    display: none;
+
+    @include md-block(){
+      display: block;
+      position: absolute;
+      bottom: -28px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+  }
+
+  .btn-hide {
+    @include md-block(){
+      display: none;
+    }
   }
 }
 
 .bestseller-content {
   position: absolute;
-  width: 280px;
-  margin-top: 110px;
+  max-width: 280px;
+  top: 160px;
   z-index: 2;
+
+  @media (max-width: 1220px){
+    top: 100px;
+  }
+
+  @include md-block(){
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    max-width: 100%;
+  }
 }
 
 .bestseller-content p {
@@ -33,6 +81,14 @@
   margin-bottom: 30px;
   padding: 0;
   font-size: 20px;
+
+  @media (max-width: 1100px){
+    margin-bottom: 16px;
+  }
+
+  @include md-block(){
+    display: none;
+  }
 }
 
 .bestseller-content p:last-of-type {
@@ -43,7 +99,15 @@
   max-width: 754px;
   margin-left: 33.203125%;
 
-  // @include 
+  @media (max-width: 1220px){
+    margin-left: 26%;
+  }
+
+  @media (max-width: 1100px){
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 .bestseller-bag {
@@ -54,6 +118,32 @@
   position: absolute;
   left: -400px;
   bottom: 180px;
+
+  @media (max-width: 1220px){
+    left: 0;
+    right: 0;
+    bottom: 80px;
+  }
+}
+
+.bestseller .owl-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55%;
+
+  .owl-dot span {
+    border-color: #fff;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+  }
+  
+  .owl-dot.active span {
+    background-color: #fff;
+  }
 }
 
 .bestseller .owl-theme .owl-prev,
